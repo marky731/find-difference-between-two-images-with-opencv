@@ -1,7 +1,7 @@
 import cv2
 import numpy as np
 
-sourcefile = ' ' # put the path of your image ( use the image that I uploaded in this repository to use the program efficiently) 
+sourcefile = ' ' # put the path of your image ( use the image that I uploaded in this repository to use the program efficiently)  
 img = cv2.imread(sourcefile)
 gray = cv2.cvtColor(img, cv2.COLOR_RGB2GRAY) 
 _, thresh = cv2.threshold(gray, 230, 255, cv2.THRESH_BINARY_INV) # threshodl = 门槛 = 230
